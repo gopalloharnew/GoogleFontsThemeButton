@@ -1,0 +1,11 @@
+:root {
+  --body-bg: hsl(225, 5%, 10%);
+  --body-text: hsl(255%, 5%, 95%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --body-bg: hsl(0, 0%, 100%);
+    --body-text: hsl(255%, 5%, 5%);
+  }
+}
