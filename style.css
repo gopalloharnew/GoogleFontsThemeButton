@@ -1,11 +1,68 @@
-:root {
-  --body-bg: hsl(225, 5%, 10%);
-  --body-text: hsl(255%, 5%, 95%);
+body {
+  background-color: var(--body-bg);
+  color: var(--body-text);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --body-bg: hsl(0, 0%, 100%);
-    --body-text: hsl(255%, 5%, 5%);
-  }
+.theme-button {
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 250ms ease;
+  outline: none;
+}
+
+.theme-button svg {
+  fill: var(--theme-icon-color);
+  transition: fill 250ms ease;
+}
+
+.theme-button:hover svg,
+.theme-button:focus svg {
+  fill: var(--theme-icon-hover-color);
+}
+
+.theme-button svg {
+  fill: var(--theme-icon-color);
+  transition: fill 250ms ease;
+}
+
+.theme-button svg .theme-icon-moon {
+  transition: transform 400ms ease-out;
+  transform-origin: center;
+  transform: var(--theme-icon-moon-transform);
+}
+
+.theme-button svg .theme-icon-sun {
+  transition: transform 750ms cubic-bezier(0.11, 0.14, 0.29, 1.32);
+  transform-origin: center;
+  transform: var(--theme-icon-sun-transform);
+}
+
+.theme-button:hover,
+.theme-button:focus {
+  background-color: hsla(210, 10%, 50%, 0.05);
+}
+
+.theme-button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  background-color: hsla(210, 5%, 50%, 0.1);
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 250ms ease, left 250ms ease, top 250ms ease;
+}
+
+.theme-button:focus::after {
+  transform: scale(1);
 }

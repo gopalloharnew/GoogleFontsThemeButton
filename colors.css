@@ -1,0 +1,21 @@
+:root {
+  color-scheme: dark;
+  --body-bg: hsl(225, 5%, 10%);
+  --body-text: hsl(255, 5%, 95%);
+  --theme-icon-color: hsl(210, 5%, 60%);
+  --theme-icon-hover-color: hsl(210, 10%, 90%);
+  --theme-icon-moon-transform: scale(1) translate(0%, 0%);
+  --theme-icon-sun-transform: rotate(0deg);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --body-bg: hsl(0, 0%, 100%);
+    --body-text: hsl(255%, 5%, 5%);
+    --theme-icon-color: hsl(225, 5%, 40%);
+    --theme-icon-hover-color: hsl(220, 5%, 10%);
+    --theme-icon-moon-transform: scale(1.3) translate(-3px, -0px) rotate(180deg);
+    --theme-icon-sun-transform: rotate(180deg);
+  }
+}
