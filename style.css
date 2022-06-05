@@ -1,6 +1,7 @@
 body {
   background-color: var(--body-bg);
   color: var(--body-text);
+  transition: background-color 250ms ease;
 }
 
 .theme-button {
