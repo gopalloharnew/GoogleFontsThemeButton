@@ -6,6 +6,8 @@
   --theme-icon-hover-color: hsl(220, 5%, 10%);
   --theme-icon-moon-transform: scale(1.3) translate(-3px, -0px) rotate(180deg);
   --theme-icon-sun-transform: rotate(180deg);
+  --scrollbar-color: hsl(225, 5%, 80%);
+  --scrollbar-color-hover: hsl(225, 5%, 60%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +19,8 @@
     --theme-icon-hover-color: hsl(210, 10%, 90%);
     --theme-icon-moon-transform: scale(1) translate(0%, 0%);
     --theme-icon-sun-transform: rotate(0deg);
+    --scrollbar-color: hsl(225, 5%, 30%);
+    --scrollbar-color-hover: hsl(225, 5%, 50%);
   }
 }
 
@@ -28,6 +32,8 @@
   --theme-icon-hover-color: hsl(220, 5%, 10%);
   --theme-icon-moon-transform: scale(1.3) translate(-3px, -0px) rotate(180deg);
   --theme-icon-sun-transform: rotate(180deg);
+  --scrollbar-color: hsl(225, 5%, 80%);
+  --scrollbar-color-hover: hsl(225, 5%, 60%);
 }
 
 :root[data-theme="Dark"] {
@@ -38,4 +44,6 @@
   --theme-icon-hover-color: hsl(210, 10%, 90%);
   --theme-icon-moon-transform: scale(1) translate(0%, 0%);
   --theme-icon-sun-transform: rotate(0deg);
+  --scrollbar-color: hsl(225, 5%, 30%);
+  --scrollbar-color-hover: hsl(225, 5%, 50%);
 }
